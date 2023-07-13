@@ -116,7 +116,7 @@
                         <h1>Best Online Education System</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, deserunt minima fuga alias doloremque voluptate itaque quod quidem.</p>
                         <div class="banner-btns">
-                            <div class="btn1">get started now</div>
+                            <a href="/home.html" class="btn1" id="getStartedNow">get started now</a>
                             <div class="btn2">view courses</div>
                         </div>
                     </div>
@@ -842,6 +842,37 @@
             </div>
         </div>
     </footer>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import {
+            getAnalytics
+        } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyA0eRK6pFyX5Sz8-ZF7FjpLdoEeaCU7ECs",
+            authDomain: "codeendeavor.firebaseapp.com",
+            projectId: "codeendeavor",
+            storageBucket: "codeendeavor.appspot.com",
+            messagingSenderId: "502133308074",
+            appId: "1:502133308074:web:582ea78c320c2070e46ed3",
+            measurementId: "G-XX8MPR794Q"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+
 
 </body>
 
