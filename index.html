@@ -28,7 +28,7 @@
 </head>
 
 <style>
-    /* for warning message */
+    /* under maintance / site is down remove after fix */
 
     @media screen and (max-width: 1000px) {
         body>*:not(.topdiv) {
@@ -47,7 +47,7 @@
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 1000;
-        display: flex !important;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -110,6 +110,27 @@
         border-radius: 50%;
         margin-right: 10px;
     }
+
+    /* for tester only */
+    .closebtnclose {
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .closebtnclose div {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        line-height: 1;
+        padding: 0px;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+    }
 </style>
 
 <body>
@@ -117,9 +138,12 @@
 
     <!-- under maintance / site is down -->
 
-    <div class="topdiv">
+    <div id="topdiv" class="topdiv">
         <div class="content">
-            <h1><span class="topdivicon">⚠</span>Code Endeavor</h1>
+            <div class="closebtnclose">
+                <div id="cbtn">&#x2715;</div>
+            </div>
+            <h1><span class="topdivicon">&#x26A0;</span>Code Endeavor</h1>
             <p>Thank you for your support and interest. At this time, Code Endeavor is no longer active. We appreciate all those who were part of our journey.</p>
             <!-- <h3>Status</h3>
             <ul>
@@ -981,7 +1005,15 @@
         const analytics = getAnalytics(app);
     </script>
 
-
+    <script defer>
+        // under maintance / site is down
+        // for warning message tester part only
+        document.querySelector('#cbtn')
+            .addEventListener('click', () => {
+                document.getElementById('topdiv')
+                    .style.display = 'none';
+            });
+    </script>
 
 </body>
 
