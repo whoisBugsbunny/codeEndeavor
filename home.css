@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -27,9 +28,13 @@
 	color: var(--light-theme-background);
 }
 ::-webkit-scrollbar-thumb {
+	cursor: pointer;
 	background: var(--primary-color);
 	border-radius: 8px;
 	/* border: 2px solid white; */
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--primary-color-light);
 }
 ::-webkit-scrollbar {
 	width: 8px;
@@ -67,12 +72,23 @@ body {
 .logo {
 	text-wrap: nowrap;
 }
+.logo > a {
+	text-decoration: none;
+}
 .burgericon {
 	display: flex;
 	align-items: center;
 }
-
+.btn-primary-c {
+	color: white;
+	background-color: var(--primary-color);
+}
+.btn-primary-c:hover {
+	color: white;
+	background-color: var(--primary-color-light);
+}
 .btnstand {
+	text-decoration: none;
 	background-color: var(--dark-theme-background);
 	color: var(--light-theme-background);
 	padding: 10px;
@@ -84,6 +100,7 @@ body {
 }
 .btnstand:hover {
 	/* color: var(--primary-color-light); */
+	color: var(--light-theme-background);
 	/* border-color: white; */
 	box-shadow: 0 0 0 2px white;
 }
@@ -121,13 +138,14 @@ body {
 }
 
 .lefthiddennav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: var(--light-black-background);
 	width: 250px;
 	height: 100vh;
 	transition: all 300ms cubic-bezier(0.28, 0.3, 0.15, 1.27);
+	z-index: 100;
 }
 .hideleft {
 	left: -250px;
@@ -162,6 +180,20 @@ body {
 	font-size: 25px;
 	padding: 10px;
 }
+.diffindicator > span > span {
+	font-size: 10px;
+}
+.diffindicator {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+.diffindicator > :last-child {
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
 .smlcardhorizontal {
 	display: flex;
 	overflow: auto;
@@ -181,7 +213,7 @@ body {
 }
 .landscapecardhorizontal {
 	display: flex;
-	overflow: auto;
+	overflow-y: hidden;
 }
 .landscapecard {
 	background-color: var(--light-black-background);
@@ -189,7 +221,10 @@ body {
 	padding: 0px;
 	margin: 10px;
 	width: 200px;
-	height: 300px;
+	/* max-height: 300px; */
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .landscapecardimg > img {
 	width: 100%;
@@ -205,6 +240,9 @@ body {
 }
 .cardbodytext {
 	opacity: 0.5;
+}
+.dark-card {
+	background-color: var(--light-black-background);
 }
 
 .wrappercardhorizontal {
@@ -239,6 +277,95 @@ body {
 /* footer */
 
 .footer {
+	margin-top: 20px;
 	min-height: 200px;
 	background-color: var(--light-black-background);
+}
+
+/* login box */
+
+.loginback-hide {
+	top: -100% !important;
+	/* display: none; */
+}
+.loginback {
+	--_color: #162938;
+	background-position: center center;
+	width: 100%;
+	position: fixed;
+	background-color: #1a1a1a;
+	top: 0;
+	height: 100%;
+	z-index: 100;
+	background-image: url(images/img/bluevector.jpg);
+	background-size: cover;
+	transition: all 250ms linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loginback > div {
+	padding: 30px;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	box-shadow: inset 0 0 5px 0 #fefefe;
+	width: 400px;
+	margin: 10px;
+	background: #fefefe2e;
+	overflow: hidden;
+	color: var(--_color);
+}
+.loginback > div > span {
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 10px;
+	background: var(--_color);
+	border-bottom-left-radius: 10px;
+}
+.loginback > div > div {
+	margin: 10px;
+}
+.loginback > div > div > input {
+	text-indent: 10px;
+	width: 100%;
+	color: var(--_color);
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid var(--_color);
+	outline: none;
+	padding: 0 0 10px 0;
+}
+
+.loginback > div > div > input[type="submit"] {
+	padding: 10px;
+	border-radius: 10px;
+	outline: none;
+	text-align: center;
+	color: white;
+	background: var(--_color);
+	transition: all 100ms linear;
+}
+.loginthirdparty {
+	color: white;
+	display: flex;
+	cursor: pointer;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.loginthirdparty > :last-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #4285f4;
+}
+.loginthirdparty > :first-child {
+	background: #fefefe;
+	padding: 10px;
+}
+.loginthirdparty > span > img {
+	height: 30px;
 }

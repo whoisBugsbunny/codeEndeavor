@@ -25,7 +25,6 @@
     <!-- style sheet -->
     <!-- <link rel="stylesheet" href="main.css"> -->
     <link rel="stylesheet" href="home.css">
-    <script src="home.js" defer></script>
     <script src="kit.fontawesome.com/6a97ae265c.js"></script>
 </head>
 
@@ -40,7 +39,7 @@
                 </span>
             </div>
             <span class="logo">
-                <span style="color: #ffa500;">Code</span> <span style="color:#1eb2a6;">Endeavor</span>
+                <a href="/"><span style="color: #ffa500;">Code</span> <span style="color:#1eb2a6;">Endeavor</span></a>
             </span>
         </div>
         <div class="searchbar">
@@ -49,23 +48,40 @@
 
         </div>
         <div class="rightopts">
-            <div class="btnstand">
+            <a class="btnstand">
                 <span class="material-symbols-rounded">
                     notifications
                 </span>
-            </div>
-            <div class="btnstand">
+            </a>
+            <a class="btnstand">
                 <span class="material-symbols-rounded">
                     chat
                 </span>
-            </div>
-            <div class="btnstand profile">
+            </a>
+            <a href="profile.html" class="btnstand profile">
                 <span class="material-symbols-rounded">
                     person
                 </span>
-            </div>
+            </a>
         </div>
     </nav>
+
+    <!-- login -->
+    <div class="loginback loginback-hide">
+        <div>
+            <span class="material-symbols-rounded" id="closelogin">
+                close
+            </span>
+            <h2 style="text-align: center;">Login</h2>
+            <div>Email</div>
+            <div><input type="email" name="" id="email"></div>
+            <div>Password</div>
+            <div><input type="password" name="" id="password"></div>
+            <div><input type="submit" value="Log In" id="login"></div>
+            <hr>
+            <div id="googlelogin" class="loginthirdparty"><span><img src="images/logo/PinClipart-google.png" alt="" srcset=""></span><span>Sign In with Google</span></div>
+        </div>
+    </div>
 
     <!-- nav left to right -->
     <div class="lefthiddennav hideleft">
@@ -88,165 +104,108 @@
     </div>
 
 
-    <main>
-        <div class="banner1">
-            <div class="bannerimg">
-                <img src="/images/img/bgcroud.jpg" alt="" srcset="">
+    <div class="banner1">
+        <div class="bannerimg">
+            <img src="/images/img/bgcroud.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="container-fluid contain">
+        <div class="containertitle">Lorem</div>
+        <div class="smlcardhorizontal">
+            <div class="smlcard">test card</div>
+            <div class="smlcard">test card</div>
+            <div class="smlcard">test card</div>
+            <div class="smlcard">test card</div>
+            <div class="smlcard">test card</div>
+            <div class="smlcard">test card</div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid contain">
+        <div class="containertitle">Continue Watching</div>
+
+        <div class="wrappercardhorizontal snap-inline">
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
+            </div>
+            <div class="horicard">
+                <img src="https://placekitten.com/g/300/200" alt="" srcset="">
+                <p>lorem ipsum</p>
             </div>
         </div>
 
-        <div class="container-fluid contain">
-            <div class="containertitle">Lorem</div>
-            <div class="smlcardhorizontal">
-                <div class="smlcard">test card</div>
-                <div class="smlcard">test card</div>
-                <div class="smlcard">test card</div>
-                <div class="smlcard">test card</div>
-                <div class="smlcard">test card</div>
-                <div class="smlcard">test card</div>
-            </div>
-        </div>
+    </div>
 
 
-        <div class="container-fluid contain">
-            <div class="containertitle">Continue Watching</div>
-
-            <div class="wrappercardhorizontal snap-inline">
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-                <div class="horicard">
-                    <img src="https://placekitten.com/g/300/200" alt="" srcset="">
-                    <p>lorem ipsum</p>
-                </div>
-            </div>
-
-            <div class="row landscapecardhorizontal">
-                <div class="col">
-                    <div class="landscapecard">
-                        <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
-                        <div class="landscapecardbody">
-                            <div class="cardtitle">test title</div>
-                            <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="container-fluid contain">
-            <div class="containertitle">Continue Watching</div>
-            <div class="row landscapecardhorizontal">
-                <div class="col">
-                    <div class="landscapecard">
-                        <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
-                        <div class="landscapecardbody">
-                            <div class="cardtitle">test title</div>
-                            <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="landscapecard">
-                        <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
-                        <div class="landscapecardbody">
-                            <div class="cardtitle">test title</div>
-                            <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="landscapecard">
-                        <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
-                        <div class="landscapecardbody">
-                            <div class="cardtitle">test title</div>
-                            <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="landscapecard">
-                        <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
-                        <div class="landscapecardbody">
-                            <div class="cardtitle">test title</div>
-                            <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="landscapecard">
-                        <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
-                        <div class="landscapecardbody">
-                            <div class="cardtitle">test title</div>
-                            <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="container-fluid contain">
-            <div class="containertitle">Orignals</div>
-            <div class="row landscapecardhorizontal">
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+    <div class="container-fluid contain">
+        <div class="containertitle">Continue Watching</div>
+        <div class="landscapecardhorizontal">
+            <div class="">
+                <div class="landscapecard">
+                    <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
                     <div class="landscapecardbody">
                         <div class="cardtitle">test title</div>
                         <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                     </div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+            </div>
+            <div class="">
+                <div class="landscapecard">
+                    <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
                     <div class="landscapecardbody">
                         <div class="cardtitle">test title</div>
                         <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                     </div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+            </div>
+            <div class="">
+                <div class="landscapecard">
+                    <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
                     <div class="landscapecardbody">
                         <div class="cardtitle">test title</div>
                         <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                     </div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+            </div>
+            <div class="">
+                <div class="landscapecard">
+                    <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
                     <div class="landscapecardbody">
                         <div class="cardtitle">test title</div>
                         <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                     </div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+            </div>
+            <div class="">
+                <div class="landscapecard">
+                    <div class="landscapecardimg"><img src="images/img/htmleasy.jpeg" alt=""></div>
                     <div class="landscapecardbody">
                         <div class="cardtitle">test title</div>
                         <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
@@ -254,54 +213,329 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <div class="container-fluid contain">
-            <div class="containertitle">Treanding</div>
-            <div class="row landscapecardhorizontal">
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
-                    <div class="landscapecardbody">
-                        <div class="cardtitle">test title</div>
-                        <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                    </div>
+
+    <div class="container-fluid contain">
+        <div class="containertitle">Orignals</div>
+        <div class="landscapecardhorizontal">
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
-                    <div class="landscapecardbody">
-                        <div class="cardtitle">test title</div>
-                        <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                    </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
-                    <div class="landscapecardbody">
-                        <div class="cardtitle">test title</div>
-                        <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                    </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
-                    <div class="landscapecardbody">
-                        <div class="cardtitle">test title</div>
-                        <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                    </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                 </div>
-                <div class="col landscapecard">
-                    <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
-                    <div class="landscapecardbody">
-                        <div class="cardtitle">test title</div>
-                        <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
-                    </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/Python.png" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="container-fluid contain">
+        <div class="containertitle">Treanding</div>
+        <div class="landscapecardhorizontal">
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
+                </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
+                </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
+                </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
+                </div>
+            </div>
+            <div class="landscapecard">
+                <div class="landscapecardimg"><img src="images/img/htmlhard.jpg" alt=""></div>
+                <div class="landscapecardbody">
+                    <div class="cardtitle">test title</div>
+                    <div class="cardbodytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur esse quibusdam a ipsam id.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid contain">
+        <div class="containertitle">All Courses</div>
+    </div>
+    <div class="container-fluid">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="dark-card card">
+                    <img src="images/img/htmleasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML CSS JS</h5>
+                        <div class="diffindicator">
+                            <span>Difficulty : </span>
+                            <span>Easy
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">circle</span>
+                                <span class="material-symbols-rounded">tonality</span>
+                            </span>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary-c w-100">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
     </main>
 
 
     <footer class="footer">
 
     </footer>
+
+    <script type="module" src="home.js" defer></script>
+
 </body>
 
 </html>
